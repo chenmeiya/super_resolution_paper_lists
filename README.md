@@ -3,7 +3,9 @@ reading paper lists of super resolution
 
 # Up-sample operation
 ## [Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network](https://arxiv.org/pdf/1609.05158.pdf)
+
 论文链接：https://arxiv.org/pdf/1609.05158.pdf
+
 超分任务，将低分辨率空间映射到高分辨率空间是必要操作。
   * 前人采用的很多方法，如在网络前/中/后分别提升图像分辨率，一方面，增强之前上采样将提升分辨率；另一方面，直接使用bicubic的上采样方法没有引入额外的信息解决病态问题。
   * 通过学习的方式实现上采样被广泛认为是更好的方式，然而却缺乏有效的提升分辨率的卷积层。
@@ -18,7 +20,9 @@ Multi-frame image super-resolution algorithms based on deep learning almost incl
 * implicitly align methods based on deformable convolutional network; 
 * explicitly align methods based on optical flow. It needs additional supervision or pretraining on other tasks
 ## [EDVR: Video Restoration with Enhanced Deformable Convolutional Networks](https://openaccess.thecvf.com/content_CVPRW_2019/papers/NTIRE/Wang_EDVR_Video_Restoration_With_Enhanced_Deformable_Convolutional_Networks_CVPRW_2019_paper.pdf)
+
 论文链接：https://openaccess.thecvf.com/content_CVPRW_2019/papers/NTIRE/Wang_EDVR_Video_Restoration_With_Enhanced_Deformable_Convolutional_Networks_CVPRW_2019_paper.pdf
+
 经典的视频超分方法，在NTIRE19 video restoration and enhancement challenges获得冠军。包括对齐、融合、重建三个部分。
 * **输入**：当前帧，前N帧，后N帧，共2N+1帧
 * **对齐方法**：金字塔式级联的可行变卷积网络实现隐式对齐。采用stride conv 下采样，每个level 都经过DCN(deformable convolution network),得到该level的feature 和offset，通过bilinear分别对feature和offset上采样给下一层使用.

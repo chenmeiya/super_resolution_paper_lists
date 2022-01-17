@@ -18,11 +18,11 @@ reading paper lists of super resolution
 
 早期基于深度学习的图像超分辨方法，针对SRCNN提出改进
 
-1）感受野：文章提出深的网络结构提升感受野，并证明 the deeper, the better
+1) **感受野**：文章提出深的网络结构提升感受野，并证明 the deeper, the better
 
-2) 收敛性：增大学习率，提升收敛速度
-3) 
-3）超分因子：输入上插为目标分辨率，混合多个超分因子进行训练
+2) **收敛性**：增大学习率，提升收敛速度
+
+3) **超分因子**：输入上插为目标分辨率，混合多个超分因子进行训练
 
 # Multi-frame image super resolution(including video)
 ### Introduction:

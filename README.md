@@ -15,9 +15,13 @@ reading paper lists of super resolution
 # Single image super resolution
 ## [2016 CVPR Accurate Image Super-Resolution Using Very Deep Convolutional Networks](https://openaccess.thecvf.com/content_cvpr_2016/papers/Kim_Accurate_Image_Super-Resolution_CVPR_2016_paper.pdf)
 论文链接：https://openaccess.thecvf.com/content_cvpr_2016/papers/Kim_Accurate_Image_Super-Resolution_CVPR_2016_paper.pdf
+
 早期基于深度学习的图像超分辨方法，针对SRCNN提出改进
+
 1）感受野：文章提出深的网络结构提升感受野，并证明 the deeper, the better
+
 2) 收敛性：增大学习率，提升收敛速度
+3) 
 3）超分因子：输入上插为目标分辨率，混合多个超分因子进行训练
 
 # Multi-frame image super resolution(including video)

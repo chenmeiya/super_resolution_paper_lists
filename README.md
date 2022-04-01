@@ -24,6 +24,20 @@ reading paper lists of super resolution
 
 3) **超分因子**：输入上插为目标分辨率，混合多个超分因子进行训练
 
+## [2020 CVPR Learning Texture Transformer Network for Image Super-Resolution]/(https://arxiv.org/pdf/2006.04139.pdf)
+
+论文链接：https://arxiv.org/pdf/2006.04139.pdf
+
+代码链接：https://github.com/FuzhiYang/TTSR
+
+Problem：有参考的单帧图像超分问题；
+
+SOTA: 已有的方法通过高层语义知识(光流，分类任务)将高分辨率参考帧图像信息迁移到低分辨率图像超分中，作者认为这种方法不能有效的表达HR features.
+
+Methods: 将LR 和 Ref的特征分别作为transformer的Qeury 和Key, 通过hard attention 和soft attention 的方式将HR特征迁移应用到LR图像超分中
+
+Deeply think: 将LR和下采样后上采样的Ref图像分别作为Qeury 和Key，Q K点成的结构，计算了图像结构间的相似性，根据计算的相似性在HR图像中找到对应的特征，进而迁移到LR中实现超分。
+
 # Multi-frame image super resolution(including video)
 ### Introduction:
 Multi-frame image super-resolution algorithms based on deep learning almost include (feature extraction) alignment, fusion, and reconstruction, which are similar to traditional multi-frame methods consisting of alignment, fusion, and post-process. Due to the different alignment methods, there are two categories, including: 
